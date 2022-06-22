@@ -1,297 +1,148 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Барбершоп «Бородинский»</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserratregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserratmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserratbold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserratextrabold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserratextrabold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="page__body">
-
-<header class="main-header">
-  <a class="main-header__logo">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-      <img src="img/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
-    </picture>
-  </a>
-  <nav class="main-nav main-nav--closed main-nav--nojs">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">
-            Наши работы
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Записаться
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            Контакты
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__login js-login" href="login.html">
-            <svg class="user-list__login-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#login"></use>
-            </svg>
-            Войти
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main class="main-container">
-
-  <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
-
-  <section class="stats">
-    <div class="stats__wrapper">
-      <header class="stats__header">
-        <h2 class="visually-hidden">
-          Статистика Барбершопа
-        </h2>
-        <p class="stats__slogan">
-          Стрижка у нас<br>
-          это выгодно!
-        </p>
-        <p class="stats__intro">
-          Мужская стрижка требует<br>
-          точного подхода. Обратимся<br>
-          к статистике:
-        </p>
-        <p class="stats__legend stats__legend--top">
-          <small>
-            * — приведённые данные ложь
-          </small>
-        </p>
-      </header>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__number">
-            1 500<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            7 200
-          </dt>
-          <dd class="stats__description">
-            секунд<br>
-            времени мастера
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            90 000
-          </dt>
-          <dd class="stats__description">
-            постриженных<br>
-            волос
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            500 000<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
-        </div>
-      </dl>
-      <small class="stats__legend stats__legend--bottom">
-        * — приведённые данные ложь
-      </small>
-    </div>
-  </section>
-
-  <section class="advantages">
-    <div class="advantages__wrapper slider">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list slider__list">
-        <li class="advantages__item advantages__item--fast slider__item">
-          <h3 class="advantages__title">Быстро</h3>
-          <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
-        </li>
-        <li class="advantages__item advantages__item--cool slider__item">
-          <h3 class="advantages__title">Круто</h3>
-          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
-        </li>
-        <li class="advantages__item advantages__item--price slider__item">
-          <h3 class="advantages__title">Дорого</h3>
-          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-        </li>
-      </ul>
-      <p class="advantages__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="news__wrapper">
-      <h2 class="news__title">Новости и акции</h2>
-      <div class="news__list">
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-29">
-            <b class="news__day">29</b> сент
-          </time>
-          <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-19">
-            <b class="news__day">19</b> сент
-          </time>
-          <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец пополнил наши стройные ряды. Спешите записаться!</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-09">
-            <b class="news__day">9</b> сент
-          </time>
-          <p class="news__text">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём здесь подвох!</p>
-        </a>
+<body>
+  <header class="header">
+    <div class="header__navigation header__navigation--closed header__navigation--nojs">
+      <a class="header__logo" href="">
+        <span class="header__logo-medium">D</span><span class="header__logo-full">RINK</span>
+        <img src="img/logo.svg" width="32" height="36" alt="Логотип Drink 2 Go">
+        <span class="header__logo-medium">G</span><span class="header__logo-full">O</span>
+        <span class="header__logo-description">Интернет-магазин<br> кофейных напитков</span>
+      </a>
+      <nav class="header__main-nav main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link main-nav__link--current">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Доставка
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user-menu user-menu">
+        <ul class="user-menu__list">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">
+              <svg class="user-menu__icon" role="img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="#333333"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">
+              <svg class="user-menu__icon" role="img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
+              </svg>
+              <span>Корзина</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <a class="news__to-all button" href="#">Показать все</a>
     </div>
-  </section>
+  </header>
+  <main></main>
 
-  <section class="reviews">
-    <div class="reviews__wrapper slider">
-      <h2 class="reviews__title">Отзывы о нас</h2>
-      <a class="reviews__write button" href="form.html">Оставить свой</a>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Трэвис Баркер</cite>
-            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Джона Смита">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Джон Смит</cite>
-            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
-          </div>
-        </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
-      </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="main-footer">
-  <div class="main-footer__wrapper">
-    <div class="main-footer__contacts contacts">
-      <b class="contacts__title">Барбершоп «Бородинский»</b>
-      <p class="contacts__text">
-        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
-        </a>
-      </p>
-    </div>
-    <div class="main-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+  <footer class="footer">
+    <div class="footer__header">
+      <a class="footer__logo" href="">
+        D<span>RINK</span>
+        <img src="img/logo.svg" width="32" height="36" alt="Логотип Drink 2 Go">
+        G<span>O</span>
+      </a>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"></a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"></a>
         </li>
       </ul>
     </div>
-    <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="footer__link-blocks">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h4>Интернет-магазин</h4>
+        </li>
+        <li class="footer__item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Способы оплаты</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h4>Медиа</h4>
+        </li>
+        <li class="footer__item">
+          <a href="#">Блог</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Информация для СМИ</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Правовая информация</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li>
+          <h4>Контакты</h4>
+        </li>
+        <li>
+          <address>Санкт-Петербург, набережная реки Карповки, дом 5</address>
+        </li>
+        <li>
+          <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </li>
+      </ul>
     </div>
-  </div>
-</footer>
-
-<section class="modal">
-  <h2>Личный кабинет</h2>
-  <p class="modal__description">Введите свой логин и пароль, чтобы войти</p>
-  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label class="visually-hidden" for="user-login">Логин</label>
-      <input class="modal__input modal__input--icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-    </p>
-    <p>
-      <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class=" modal__input modal__input--icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-    </p>
-    <p class="modal__help">
-      <label class="modal__help-checkbox">
-        <input type="checkbox" name="remember" class="visually-hidden">
-        <span class="modal__help-indicator"></span>
-        Запомните меня
-      </label>
-      <a class="modal__restore" href="#">Я забыл пароль!</a>
-    </p>
-    <div class="modal__buttons">
-      <button class="modal__button button" type="submit">Войти</button>
-      <button class="modal__button modal__button--close" type="button">Закрыть</button>
+    <div class="footer__academy">
+      <a href="https://htmlacademy.ru/">
+        Разработано в HTML Academy
+      </a>
     </div>
-  </form>
-</section>
-
-<script src="js/script.min.js"></script>
-
+  </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
