@@ -161,18 +161,98 @@
               <input class="filter__input-price filter__input-price--right" type="number" value="900">
             </div>
           </label>
-          <label class="filter__milk">
-            <input type="radio" name="milk-type" value="no_matter" checked>
-            <input type="radio" name="milk-type" value="living">
-            <input type="radio" name="milk-type" value="vegetable">
-            <input type="radio" name="milk-type" value="without_milk">
-          </label>
-          <label class="filter__country">
-
+          <div class="filter__milk">
+            <p class="filter__text">Наличие молока</p>
+            <ul class="filter__milk-list">
+              <li class="filter__milk-item">
+                <label>
+                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="no_matter" checked>
+                  <span class="filter__mark-circle"></span>
+                  <span class="filter__milk-label">Неважно</span>
+                </label>
+              </li>
+              <li class="filter__milk-item">
+                <label>
+                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="animal_milk">
+                  <span class="filter__mark-circle"></span>
+                  <span class="filter__milk-label">Только животное</span>
+                </label>
+              </li>
+              <li class="filter__milk-item">
+                <label>
+                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="vegetable">
+                  <span class="filter__mark-circle"></span>
+                  <span class="filter__milk-label">Только растительное</span>
+                </label>
+              </li>
+              <li class="filter__milk-item">
+                <label>
+                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="without_milk">
+                  <span class="filter__mark-circle"></span>
+                  <span class="filter__milk-label">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__country">
+            <p class="filter__text">Страна произрастания</p>
+            <ul class="filter__country-list">
+              <li class="filter__country-item">
+                <label>
+                  <input class="visually-hidden filter__input-country" type="checkbox" name="Brazil" checked>
+                  <span class="filter__mark-toogle"></span>
+                  <span class="filter__country-label">Бразилия</span>
+                </label>
+              </li>
+              <li class="filter__country-item">
+                <label>
+                  <input class="visually-hidden filter__input-country" type="checkbox" name="Ethiopia">
+                  <span class="filter__mark-toogle"></span>
+                  <span class="filter__country-label">Эфиопия</span>
+                </label>
+              </li>
+              <li class="filter__country-item">
+                <label>
+                  <input class="visually-hidden filter__input-country" type="checkbox" name="Colombia">
+                  <span class="filter__mark-toogle"></span>
+                  <span class="filter__country-label">Колумбия</span>
+                </label>
+              </li>
+              <li class="filter__country-item">
+                <label>
+                  <input class="visually-hidden filter__input-country" type="checkbox" name="Costa Rica">
+                  <span class="filter__mark-toogle"></span>
+                  <span class="filter__country-label">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="filter__country-item">
+                <label>
+                  <input class="visually-hidden filter__input-country" type="checkbox" name="Peru">
+                  <span class="filter__mark-toogle"></span>
+                  <span class="filter__country-label">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button class="filter__reset-button" type="reset">Сбросить фильтр</button>
+        </form>
+      </div>
+      <div class="catalog__cards cards">
+        <form class="cards__sorting">
+          <label class="cards__label">
+            <span class="cards__label-text">Сортировка:</span>
+            <select class="cards__select" name="sorting" id="sorting">
+              <option value="default">по умолчанию</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="cheap">сначала дешёвые</option>
+              <option value="popular">высокий рейтинг</option>
+            </select>
           </label>
         </form>
       </div>
-      <div class="catalog__cards cards"></div>
+      <div class="catalog__pagination">
+
+      </div>
     </section>
   </main>
   <footer class="footer">
