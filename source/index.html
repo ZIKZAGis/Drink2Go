@@ -73,7 +73,107 @@
     </div>
   </header>
   <main>
+    <section class="promo">
+      <h1 class="visually-hidden">Новинки кофейных напитков</h1>
+      <div class="promo__wrapper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper__image" src="img/decafmobile.png" width="280" height="280" alt="Декаф Флэт Уайт">
+            <span class="swiper__new">Новинка!</span>
+            <h2 class="swiper__title">Декаф Флэт Уайт</h2>
+            <p class="swiper__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="swiper__price-block">
+              <p class="swiper__price"><span class="swiper__old-price strikethrough-text">295₽</span>225₽</p>
+              <button class="swiper__price-button" type="button">Заказать</button>
+            </div>
+          </div>
+          <div class="swiper-slide" hidden>
+            <img class="swiper__image" src="img/lattemobile.png" width="280" height="280" alt="Лавандовый Латте">
+            <span class="swiper__new">Новинка!</span>
+            <h2 class="swiper__title">Лавандовый Латте</h2>
+            <p class="swiper__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="swiper__price-block">
+              <p class="swiper__price"><span class="swiper__old-price strikethrough-text">285₽</span>265₽</p>
+              <button class="swiper__price-button" type="button">Заказать</button>
+            </div>
+          </div>
+          <div class="swiper-slide" hidden>
+            <img class="swiper__image" src="img/espressomobile.png" width="280" height="280" alt="Тройной Эспрессо">
+            <span class="swiper__new">Новинка!</span>
+            <h2 class="swiper__title">Тройной Эспрессо</h2>
+            <p class="swiper__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="swiper__price-block">
+              <p class="swiper__price"><span class="swiper__old-price strikethrough-text">395₽</span>375₽</p>
+              <button class="swiper__price-button" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__top">
+        <p class="features__badge">Преимущества</p>
+        <h1 class="features__title">Главные причины выбрать Drink2Go</h1>
+      </div>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item features__item--speed">
+            <h3 class="features__item-title">Скорость</h3>
+            <p class="features__text">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="features__item features__item--convenience">
+            <h3 class="features__item-title">Удобство</h3>
+            <p class="features__text">Легко помещается и в карман, и в маленькую сумочку</p>
+          </li>
+          <li class="features__item features__item--cheerfulness">
+            <h3 class="features__item-title">Бодрость</h3>
+            <p class="features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="features__item features__item--eco">
+            <h3 class="features__item-title">Экологичность</h3>
+            <p class="features__text">Вся упаковка сделана из перерабатываемых материалов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__top">
+        <p class="catalog__badge">Каталог</p>
+        <h1 class="catalog__title">Каталог кофейных напитков</h1>
+      </div>
+      <div class="catalog__filter filter">
+        <form class="filter__form">
+          <label class="filter__price">
+            <p class="filter__text">Цена</p>
+            <span class="filter__range-bar">
+              <span class="filter__range-strip" style="left: 0;
+              right: 20px;">
+                <span class="filter__range-mark filter__range-mark--left"></span>
+                <span class="filter__range-mark filter__range-mark--right"></span>
+              </span>
+            </span>
+            <div class="filter__input-wrapper">
+              <input class="filter__input-price filter__input-price--left" type="number" value="0">
+              <span class="filter__price-stroke"></span>
+              <input class="filter__input-price filter__input-price--right" type="number" value="900">
+            </div>
+          </label>
+          <label class="filter__milk">
+            <input type="radio" name="milk-type" value="no_matter" checked>
+            <input type="radio" name="milk-type" value="living">
+            <input type="radio" name="milk-type" value="vegetable">
+            <input type="radio" name="milk-type" value="without_milk">
+          </label>
+          <label class="filter__country">
 
+          </label>
+        </form>
+      </div>
+      <div class="catalog__cards cards"></div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__top">
@@ -163,6 +263,7 @@
       </a>
     </div>
   </footer>
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
+<!-- <script type="module" src="js/swiper.js"></script> -->
 </body>
 </html>
