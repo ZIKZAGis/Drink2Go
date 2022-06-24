@@ -1,12 +1,21 @@
 .promo {
   position: relative;
-  padding: 20px 20px 60px;
   background-color: @flatwhitebg;
+}
+
+.promo__wrapper {
+  position: relative;
+  padding: 20px 20px 60px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 188px;
     padding-top: 60px;
     padding-bottom: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 180px 80px 242px 735px;
+    text-align: left;
   }
 }
 
@@ -31,4 +40,35 @@
   @media (min-width: @tablet-width) {
     width: 80px;
   }
+}
+
+.promo__pagination-list {
+  display: none;
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 60px;
+  left: calc(50% - 101px);
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.promo__pagination-label {
+  display: block;
+  padding: 11px 0;
+  margin: 0 4px;
+}
+
+.promo__pagination-mark {
+  display: block;
+  height: 4px;
+  width: 62px;
+  background-color: @white;
+}
+
+.promo__pagination-input:checked + .promo__pagination-mark {
+  background-color: @primary;
 }

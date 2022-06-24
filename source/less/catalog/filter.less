@@ -22,6 +22,10 @@
     margin: 0 auto;
     padding-right: 26px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .filter__price {
@@ -94,6 +98,7 @@
   color: @black;
   padding: 8px 10px;
   text-align: center;
+  appearance: none;
 
   @media (min-width: @tablet-width) {
     width: 96px;
@@ -216,6 +221,7 @@
   border: none;
   margin: 0 auto;
   padding: 8px 67px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 222px;

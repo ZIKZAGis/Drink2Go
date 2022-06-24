@@ -40,22 +40,20 @@
   }
 }
 
-.features__wrapper {
-  @media (min-width: @tablet-width) {
-    width: 728px;
-    margin: 0 auto;
-  }
-}
-
 .features__list {
   padding: 0;
   margin: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
+    width: 728px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 

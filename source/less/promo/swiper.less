@@ -4,6 +4,10 @@
 
 .swiper__slide {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .swiper__image {
@@ -14,6 +18,11 @@
     position: absolute;
     bottom: -188px;
     left: calc(50% - 140px);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 30px;
+    left: 105px;
   }
 }
 
@@ -39,6 +48,10 @@
     margin-bottom: 16px;
     padding: 0 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .swiper__description {
@@ -53,12 +66,20 @@
     line-height: 32px;
     padding: 0 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .swiper__price-block {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    justify-content: left;
+  }
 }
 
 .swiper__price {
