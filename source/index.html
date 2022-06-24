@@ -76,8 +76,8 @@
     <section class="promo">
       <h1 class="visually-hidden">Новинки кофейных напитков</h1>
       <div class="promo__wrapper swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        <div class="swiper__wrapper">
+          <div class="swiper__slide">
             <img class="swiper__image" src="img/decafmobile.png" width="280" height="280" alt="Декаф Флэт Уайт">
             <span class="swiper__new">Новинка!</span>
             <h2 class="swiper__title">Декаф Флэт Уайт</h2>
@@ -87,7 +87,7 @@
               <button class="swiper__price-button" type="button">Заказать</button>
             </div>
           </div>
-          <div class="swiper-slide" hidden>
+          <div class="swiper__slide" hidden>
             <img class="swiper__image" src="img/lattemobile.png" width="280" height="280" alt="Лавандовый Латте">
             <span class="swiper__new">Новинка!</span>
             <h2 class="swiper__title">Лавандовый Латте</h2>
@@ -97,7 +97,7 @@
               <button class="swiper__price-button" type="button">Заказать</button>
             </div>
           </div>
-          <div class="swiper-slide" hidden>
+          <div class="swiper__slide" hidden>
             <img class="swiper__image" src="img/espressomobile.png" width="280" height="280" alt="Тройной Эспрессо">
             <span class="swiper__new">Новинка!</span>
             <h2 class="swiper__title">Тройной Эспрессо</h2>
@@ -108,15 +108,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
+      <div class="promo__pagination"></div>
+      <button type="button" class="promo__button promo__button--prev"></button>
+      <button type="button" class="promo__button promo__button--next"></button>
     </section>
     <section class="features">
       <div class="features__top">
-        <p class="features__badge">Преимущества</p>
-        <h1 class="features__title">Главные причины выбрать Drink2Go</h1>
+        <h1 class="features__badge">Преимущества</h1>
+        <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
       </div>
       <div class="features__wrapper">
         <ul class="features__list">
@@ -141,117 +141,198 @@
     </section>
     <section class="catalog">
       <div class="catalog__top">
-        <p class="catalog__badge">Каталог</p>
-        <h1 class="catalog__title">Каталог кофейных напитков</h1>
+        <h1 class="catalog__badge">Каталог</h1>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
       </div>
       <div class="catalog__filter filter">
         <form class="filter__form">
-          <label class="filter__price">
-            <p class="filter__text">Цена</p>
-            <span class="filter__range-bar">
-              <span class="filter__range-strip" style="left: 0;
-              right: 20px;">
-                <span class="filter__range-mark filter__range-mark--left"></span>
-                <span class="filter__range-mark filter__range-mark--right"></span>
+          <div class="filter__wrapper">
+            <label class="filter__price">
+              <p class="filter__text">Цена</p>
+              <span class="filter__range-bar">
+                <span class="filter__range-strip" style="left: 0;
+                right: 20px;">
+                  <span class="filter__range-mark filter__range-mark--left"></span>
+                  <span class="filter__range-mark filter__range-mark--right"></span>
+                </span>
               </span>
-            </span>
-            <div class="filter__input-wrapper">
-              <input class="filter__input-price filter__input-price--left" type="number" value="0">
-              <span class="filter__price-stroke"></span>
-              <input class="filter__input-price filter__input-price--right" type="number" value="900">
+              <div class="filter__input-wrapper">
+                <input class="filter__input-price filter__input-price--left" type="number" value="0">
+                <span class="filter__price-stroke"></span>
+                <input class="filter__input-price filter__input-price--right" type="number" value="900">
+              </div>
+            </label>
+            <div class="filter__milk">
+              <p class="filter__text">Наличие молока</p>
+              <ul class="filter__milk-list">
+                <li class="filter__milk-item">
+                  <label>
+                    <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="no_matter" checked>
+                    <span class="filter__mark-circle"></span>
+                    <span class="filter__milk-label">Неважно</span>
+                  </label>
+                </li>
+                <li class="filter__milk-item">
+                  <label>
+                    <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="animal_milk">
+                    <span class="filter__mark-circle"></span>
+                    <span class="filter__milk-label">Только животное</span>
+                  </label>
+                </li>
+                <li class="filter__milk-item">
+                  <label>
+                    <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="vegetable">
+                    <span class="filter__mark-circle"></span>
+                    <span class="filter__milk-label">Только растительное</span>
+                  </label>
+                </li>
+                <li class="filter__milk-item">
+                  <label>
+                    <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="without_milk">
+                    <span class="filter__mark-circle"></span>
+                    <span class="filter__milk-label">Без молока</span>
+                  </label>
+                </li>
+              </ul>
             </div>
-          </label>
-          <div class="filter__milk">
-            <p class="filter__text">Наличие молока</p>
-            <ul class="filter__milk-list">
-              <li class="filter__milk-item">
-                <label>
-                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="no_matter" checked>
-                  <span class="filter__mark-circle"></span>
-                  <span class="filter__milk-label">Неважно</span>
-                </label>
-              </li>
-              <li class="filter__milk-item">
-                <label>
-                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="animal_milk">
-                  <span class="filter__mark-circle"></span>
-                  <span class="filter__milk-label">Только животное</span>
-                </label>
-              </li>
-              <li class="filter__milk-item">
-                <label>
-                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="vegetable">
-                  <span class="filter__mark-circle"></span>
-                  <span class="filter__milk-label">Только растительное</span>
-                </label>
-              </li>
-              <li class="filter__milk-item">
-                <label>
-                  <input class="visually-hidden filter__input-milk" type="radio" name="milk-type" value="without_milk">
-                  <span class="filter__mark-circle"></span>
-                  <span class="filter__milk-label">Без молока</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="filter__country">
-            <p class="filter__text">Страна произрастания</p>
-            <ul class="filter__country-list">
-              <li class="filter__country-item">
-                <label>
-                  <input class="visually-hidden filter__input-country" type="checkbox" name="Brazil" checked>
-                  <span class="filter__mark-toogle"></span>
-                  <span class="filter__country-label">Бразилия</span>
-                </label>
-              </li>
-              <li class="filter__country-item">
-                <label>
-                  <input class="visually-hidden filter__input-country" type="checkbox" name="Ethiopia">
-                  <span class="filter__mark-toogle"></span>
-                  <span class="filter__country-label">Эфиопия</span>
-                </label>
-              </li>
-              <li class="filter__country-item">
-                <label>
-                  <input class="visually-hidden filter__input-country" type="checkbox" name="Colombia">
-                  <span class="filter__mark-toogle"></span>
-                  <span class="filter__country-label">Колумбия</span>
-                </label>
-              </li>
-              <li class="filter__country-item">
-                <label>
-                  <input class="visually-hidden filter__input-country" type="checkbox" name="Costa Rica">
-                  <span class="filter__mark-toogle"></span>
-                  <span class="filter__country-label">Коста-Рика</span>
-                </label>
-              </li>
-              <li class="filter__country-item">
-                <label>
-                  <input class="visually-hidden filter__input-country" type="checkbox" name="Peru">
-                  <span class="filter__mark-toogle"></span>
-                  <span class="filter__country-label">Перу</span>
-                </label>
-              </li>
-            </ul>
+            <div class="filter__country">
+              <p class="filter__text">Страна произрастания</p>
+              <ul class="filter__country-list">
+                <li class="filter__country-item">
+                  <label>
+                    <input class="visually-hidden filter__input-country" type="checkbox" name="Brazil" checked>
+                    <span class="filter__mark-toogle"></span>
+                    <span class="filter__country-label">Бразилия</span>
+                  </label>
+                </li>
+                <li class="filter__country-item">
+                  <label>
+                    <input class="visually-hidden filter__input-country" type="checkbox" name="Ethiopia">
+                    <span class="filter__mark-toogle"></span>
+                    <span class="filter__country-label">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="filter__country-item">
+                  <label>
+                    <input class="visually-hidden filter__input-country" type="checkbox" name="Colombia">
+                    <span class="filter__mark-toogle"></span>
+                    <span class="filter__country-label">Колумбия</span>
+                  </label>
+                </li>
+                <li class="filter__country-item">
+                  <label>
+                    <input class="visually-hidden filter__input-country" type="checkbox" name="Costa Rica">
+                    <span class="filter__mark-toogle"></span>
+                    <span class="filter__country-label">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="filter__country-item">
+                  <label>
+                    <input class="visually-hidden filter__input-country" type="checkbox" name="Peru">
+                    <span class="filter__mark-toogle"></span>
+                    <span class="filter__country-label">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
           <button class="filter__reset-button" type="reset">Сбросить фильтр</button>
         </form>
       </div>
-      <div class="catalog__cards cards">
-        <form class="cards__sorting">
-          <label class="cards__label">
-            <span class="cards__label-text">Сортировка:</span>
-            <select class="cards__select" name="sorting" id="sorting">
-              <option value="default">по умолчанию</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="cheap">сначала дешёвые</option>
-              <option value="popular">высокий рейтинг</option>
+      <div class="catalog__sorting-wrapper">
+        <form class="catalog__sorting-form">
+          <label class="catalog__sorting-label">
+            <span class="catalog__sorting-text">Сортировка:</span>
+            <select class="catalog__select" name="sorting" id="sorting">
+              <option class="catalog__option" value="default">по умолчанию</option>
+              <option class="catalog__option" value="expensive">сначала дорогие</option>
+              <option class="catalog__option" value="cheap">сначала дешёвые</option>
+              <option class="catalog__option" value="popular">высокий рейтинг</option>
             </select>
           </label>
         </form>
       </div>
-      <div class="catalog__pagination">
-
+      <div class="catalog__cards cards">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard2.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard3.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard4.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard5.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="img/imagecard6.png" width="130" height="188" alt="Декаф Флэт Уайт">
+            <h3 class="cards__title">Декаф Флэт Уайт</h3>
+            <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="cards__bottom">
+              <span class="cards__price">225₽</span>
+              <button class="cards__button">В корзину</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="catalog__pagination pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <button class="pagination__button pagination__button--back" type="button"><span>Назад</span></button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">1</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button pagination__button--сurrent" type="button">2</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button" type="button">3</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__button pagination__button--next" type="button"><span>Вперёд</span></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <img class="map__image" src="img/map.png" alt="Карта">
       </div>
     </section>
   </main>

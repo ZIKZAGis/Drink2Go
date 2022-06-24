@@ -1,0 +1,76 @@
+.cards {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.cards__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.cards__item {
+  padding: 40px 20px 20px;
+  margin-bottom: 20px;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 359px;
+    padding: 50px 30px 30px;
+  }
+}
+
+.cards__image {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.cards__title {
+  font-family: "Montserrat Bold", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: @black;
+  margin: 0 0 4px;
+}
+
+.cards__description {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @black;
+  margin: 0 0 16px;
+}
+
+.cards__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards__price {
+  font-family: "Montserrat Bold", "Arial Black", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: @black;
+  margin: 0;
+}
+
+.cards__button {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @white;
+  background: no-repeat 20px 10px url("../../img/cardbutton.png") @primary;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px 8px 46px;
+}

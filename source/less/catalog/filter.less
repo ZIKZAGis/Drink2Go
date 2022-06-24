@@ -1,3 +1,35 @@
+.filter {
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.filter__form {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.filter__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 26px;
+  }
+}
+
+.filter__price {
+  @media (min-width: @tablet-width) {
+    width: 223px;
+  }
+}
+
 .filter__text {
   font-family: "Montserrat Bold", "Arial Bold", sans-serif;
   font-size: 16px;
@@ -62,6 +94,10 @@
   color: @black;
   padding: 8px 10px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 96px;
+  }
 }
 
 .filter__price-stroke {
@@ -74,6 +110,10 @@
 
 .filter__milk {
   padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .filter__milk-list,
@@ -130,6 +170,10 @@
 
 .filter__country {
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .filter__mark-toogle {
@@ -172,4 +216,9 @@
   border: none;
   margin: 0 auto;
   padding: 8px 67px;
+
+  @media (min-width: @tablet-width) {
+    width: 222px;
+    padding: 8px 30px;
+  }
 }
