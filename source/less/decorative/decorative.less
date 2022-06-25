@@ -22,7 +22,34 @@
 }
 
 .wrapper {
-  min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: @primarylighter;
+  }
+
+  &:focus {
+    background-color: @primarylighter;
+  }
+
+  &:active {
+    background-color: @primarydarker;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
+}
+
+.transfer {
+  display: none;
+
+  @media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+    display: inline;
+  }
 }

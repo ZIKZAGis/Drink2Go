@@ -7,6 +7,16 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -10px;
+  }
+}
+
+.user-menu__item {
+  @media (min-width: @desktop-width) {
+    margin: 0 9px;
+  }
 }
 
 .user-menu__link {
@@ -17,7 +27,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
-  padding: 20px;
+  padding: 20px 22px;
+
+  &:hover {
+    color: @primary;
+  }
+
+  &:hover path {
+    fill: @primary;
+  }
+
+  &:active {
+    background-color: @secondary;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
