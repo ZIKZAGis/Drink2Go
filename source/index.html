@@ -24,7 +24,7 @@
         <span class="header__logo-description">Интернет-магазин<br> кофейных напитков</span>
       </a>
       <nav class="header__main-nav main-nav">
-        <button class="main-nav__toogle" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -74,11 +74,11 @@
   </header>
   <main>
     <h1 class="visually-hidden">Кофейные напитки</h1>
-    <section class="promo">
+    <section class="promo wrapper">
       <div class="promo__wrapper wrapper">
         <h2 class="visually-hidden">Новинки кофейных напитков</h2>
         <div class="promo__swiper swiper">
-          <div class="swiper__wrapper">
+          <div class="swiper__line">
             <div class="swiper__slide swiper__slide--decaf">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="img/decafdesktop.webp, img/decafdesktop@2x.webp 2x">
@@ -203,12 +203,12 @@
                 <div class="filter__input-wrapper">
                   <label>
                     <span class="visually-hidden">Минимальная цена.</span>
-                    <input class="filter__input-price filter__input-price--left" type="number" placeholder="0">
+                    <input class="filter__input-price filter__input-price--left" type="number" placeholder="0" min="0" max="1000">
                   </label>
                   <span class="filter__price-stroke"></span>
                   <label>
                     <span class="visually-hidden">Максимальная цена.</span>
-                    <input class="filter__input-price filter__input-price--right" type="number" placeholder="900" value="900">
+                    <input class="filter__input-price filter__input-price--right" type="number" placeholder="900" value="900" min="0" max="1000">
                   </label>
                 </div>
               </div>
@@ -500,7 +500,6 @@
       </div>
     </div>
   </footer>
-<!-- <script src="js/script.js"></script> -->
-<!-- <script type="module" src="js/swiper.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 </html>
