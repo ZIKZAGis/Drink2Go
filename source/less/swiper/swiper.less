@@ -1,7 +1,21 @@
+.swiper__wrapper {
+  width: 100vw;
+  height: fit-content;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 188px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0;
+  }
+}
+
 .swiper__slide {
   position: relative;
   text-align: center;
-  padding: 20px 20px 60px;
+  padding-bottom: 60px;
 
   &--decaf {
     background-color: @flatwhitebg;
@@ -15,39 +29,44 @@
     background-color: @espressobg;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 188px;
-    padding-top: 60px;
-    padding-bottom: 308px;
-  }
-
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
-    padding: 180px 80px 242px 735px;
-    text-align: left;
+    padding: 0;
   }
 }
 
 .swiper__image {
   display: block;
-  height: auto;
-  margin: 0 auto 9px;
+  margin: 20px auto 10px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     width: 476px;
+    height: auto;
     bottom: -196px;
     left: calc(50% - 238px);
   }
 
   @media (min-width: @desktop-width) {
     width: 600px;
-    top: 30px;
+    top: 10px;
     left: 105px;
   }
 }
 
-.swiper__new {
+.swiper__info {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 80px 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 180px 80px 241px 735px;
+    text-align: left;
+  }
+}
+
+.swiper__badge {
   display: block;
   font-family: "Montserrat Bold", "Arial Black", sans-serif;
   font-size: 12px;
@@ -69,7 +88,6 @@
     font-size: 56px;
     line-height: 80px;
     margin-bottom: 16px;
-    padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,7 +105,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 32px;
-    padding: 0 65px;
+    padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -131,4 +149,84 @@
   border-radius: 4px;
   padding: 8px 20px;
   cursor: pointer;
+}
+
+.swiper .swiper__pagination {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    bottom: 66px;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  border-radius: 0;
+  height: 4px;
+  width: 62px;
+  background-color: @white;
+  opacity: 1;
+
+  &:hover {
+    background-color: @primaryopacity;
+  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: @primary;
+}
+
+.swiper .swiper__button {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  top: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right, @white 0%, transparent 70%);
+  }
+
+  &:active {
+    background: linear-gradient(to right, @primary -200%, transparent 70%);
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 642px;
+    width: 80px;
+    top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+    top: 21px;
+  }
+}
+
+.swiper .swiper-button-prev {
+  left: 0;
+
+  &::after {
+    content: "";
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: center center no-repeat url("../../img/arrowpromo.svg") transparent;
+  }
+}
+
+.swiper .swiper-button-next {
+  right: 0;
+  transform: scale(-1, 1);
+
+  &::after {
+    content: "";
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: center center no-repeat url("../../img/arrowpromo.svg") transparent;
+  }
 }
