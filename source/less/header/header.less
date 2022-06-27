@@ -94,6 +94,7 @@
 .header__navigation--opened .main-nav__list {
   @media (max-width: @mobile-width-only) {
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
@@ -101,6 +102,34 @@
     background-color: @white;
     z-index: 99;
     border-bottom: 1px solid @lightgrey;
+  }
+}
+
+.header__navigation--nojs .main-nav {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 60px;
+    position: relative;
+    margin-left: -70px;
+    box-sizing: border-box;
+  }
+}
+
+.header__navigation--nojs .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
     flex-direction: column;
+    width: 100vw;
+    margin-right: -8px;
+  }
+}
+
+.header__navigation--nojs .main-nav__toggle {
+  display: none;
+}
+
+.header__navigation--nojs .user-menu__list {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    right: -50px;
   }
 }
